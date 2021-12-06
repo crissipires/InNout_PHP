@@ -27,7 +27,7 @@
                     <?php include_once(TEMPLATE_PATH . '/messages.php') ?>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" placeholder="Informe o e-mail" value="<?= $_POST['email'] ?>" autofocus>
+                        <input type="email" name="email" id="email" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" placeholder="Informe o e-mail" value="<?= $email ?>" autofocus>
                         <div class="invalid-feedback">
                             <?= $errors['email'] ?>
                         </div>

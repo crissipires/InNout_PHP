@@ -41,6 +41,12 @@ header.header .logo{
     justify-content: center;
 }
 
+header .dropdown .dropdown-button .avatar{
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 header.header .menu-toggle{
     color: white;
     cursor: pointer;
