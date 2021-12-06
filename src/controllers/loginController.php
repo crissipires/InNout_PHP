@@ -1,6 +1,7 @@
 <?php
 
 loadModel('Login');
+
 $exception = null;
 
 if(count($_POST) > 0){
@@ -9,6 +10,7 @@ if(count($_POST) > 0){
     try{
         $user = $login->checkLogin();
         echo "Usuario " . $user->name;
+        header("Location: day_records.php");
     }catch(ValidationException $e){
         $exception = $e;
     }catch(AppException $e){
