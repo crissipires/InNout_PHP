@@ -11,11 +11,15 @@ define('CONTROLLER_PATH', realpath(dirname(__FILE__) . '/../controllers'));
 define('EXCEPTION_PATH', realpath(dirname(__FILE__) . '/../exception'));
 define('TEMPLATE_PATH', realpath(dirname(__FILE__) . '/../views/template'));
 
+// Constantes gerais
+
+define('DAILY_TIME', 60 * 60 * 8);
 
 // Arquivos
 require_once(realpath(dirname(__FILE__) . '/database.php'));
 require_once(realpath(dirname(__FILE__) . '/loader.php'));
 require_once(realpath(dirname(__FILE__) . '/session.php'));
+require_once(realpath(dirname(__FILE__) . '/data_util.php'));
 require_once(realpath(MODEL_PATH . '/Model.php'));
 require_once(realpath(MODEL_PATH . '/User.php'));
 require_once(realpath(EXCEPTION_PATH . '/AppException.php'));

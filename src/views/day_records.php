@@ -1,11 +1,11 @@
 <main class="content">
     <?php
         renderTitle("Registrar Ponto", 'Mantenha seu ponto consistente', 'icofont-check-alt');
-
+        include(TEMPLATE_PATH . '/messages.php');
     ?>
     <div class="card">
         <div class="card-header">
-            <h1>10 de janeiro de 2025</h1>
+            <h1><?= $today ?></h1>
             <p class="mb-0">Os batimentos efetuados hoje</p>
         </div>
         <div class="card-body">

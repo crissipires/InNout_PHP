@@ -36,6 +36,3 @@ function renderTitle($title, $subtitle, $icon = null){
 }
 
 
-
-
-
