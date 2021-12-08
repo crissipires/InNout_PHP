@@ -9,14 +9,14 @@
     include(TEMPLATE_PATH . "/messages.php");
     ?>
 
-    <a href="save_user.php" class="btn btn-lg btn-primary">Novo Usuário</a>
+    <a class="btn btn-lg btn-primary mb-3" href="save_user.php">Novo Usuário</a>
 
     <table class="table table-bordered table-striped table-hover">
         <thead>
             <th>Nome</th>
             <th>Email</th>
             <th>Data de Admissão</th>
-            <th>Data de desligamento</th>
+            <th>Data de Desligamento</th>
             <th>Ações</th>
         </thead>
         <tbody>

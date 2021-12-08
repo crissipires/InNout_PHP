@@ -1,23 +1,18 @@
 <?php
-
 loadModel('Login');
 session_start();
-
 $exception = null;
 
-if(!empty($_POST)){
+if (count($_POST) > 0) {
     $login = new Login($_POST);
-
-    try{
+    try {
         $user = $login->checkLogin();
         $_SESSION['user'] = $user;
         header("Location: day_records.php");
-    }catch(ValidationException $e){
-        $exception = $e;
-    }catch(AppException $e){
+    } catch (AppException $e) {
         $exception = $e;
     }
 }
 
-loadView('login', $_POST + ['exception' => $exception]);
 
+loadView('login', $_POST + ['exception' => $exception]);
