@@ -1,5 +1,6 @@
 <?php
 
+error_reporting(E_ALL ^ E_NOTICE); 
 // Config
 date_default_timezone_set('America/Sao_Paulo');
 setlocale(LC_TIME,'pt_BR','pt_BR.utf-8','portuguese');
@@ -18,9 +19,11 @@ define('DAILY_TIME', 60 * 60 * 8);
 // Arquivos
 require_once(realpath(dirname(__FILE__) . '/database.php'));
 require_once(realpath(dirname(__FILE__) . '/loader.php'));
+require_once(realpath(dirname(__FILE__) . '/utils.php'));
 require_once(realpath(dirname(__FILE__) . '/session.php'));
 require_once(realpath(dirname(__FILE__) . '/data_util.php'));
 require_once(realpath(MODEL_PATH . '/Model.php'));
 require_once(realpath(MODEL_PATH . '/User.php'));
+require_once(realpath(MODEL_PATH . '/WorkingHours.php'));
 require_once(realpath(EXCEPTION_PATH . '/AppException.php'));
 require_once(realpath(EXCEPTION_PATH . '/ValidationException.php'));

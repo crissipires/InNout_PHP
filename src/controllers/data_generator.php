@@ -1,7 +1,5 @@
 <?php
 
-loadModel('WorkingHours');
-
 Database::executeSQL('DELETE FROM working_hours');
 Database::executeSQL('DELETE FROM users WHERE id > 5');
 
@@ -51,14 +49,14 @@ function populateWorkingHours($userId, $initialDate, $regularDate, $extraRate, $
     while(isBefore($currentDate,$today)){
         if(!isWeekend($currentDate)){
             $template = getDayTemplateByOdds($regularDate, $extraRate, $lazyRate);
-            $columns = array_merge($columns,$template);
+            $columns = array_merge($columns, $template);
             $workingHours = new WorkingHours($columns);
-            $workingHours->save();
+            $workingHours->insert();
         }
         $currentDate = getNextDay($currentDate)->format('Y-m-d');
         $columns['work_date'] = $currentDate;
     } 
 }
 
-populateWorkingHours(2,date('Y-m-1'),70,20,10);
+populateWorkingHours(1,date('Y-m-1'),70,20,10);
 

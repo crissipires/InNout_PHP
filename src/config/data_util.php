@@ -19,6 +19,31 @@ function getNextDay($date){
     return getDateAsDateTime($date)->modify('+ 1 day');
 }
 
+function sumIntervals($intervalo1, $intervalo2){
+    $date = new DateTime('00:00:00');
+    $date->add($intervalo1);
+    $date->add($intervalo2);
+    return (new DateTime('00:00:00'))->diff($date);
+}
 
 
+function subtractIntervals($intervalo1, $intervalo2){
+    $date = new DateTime('00:00:00');
+    $date->add($intervalo1);
+    $date->sub($intervalo2);
+    return (new DateTime('00:00:00'))->diff($date);
+}
 
+function getDateFromInterval($interval){
+    return new DateTimeImmutable($interval->format('%H:%i:%s'));
+}
+  
+function getDateFromString($str){
+    return DateTimeImmutable::createFromFormat('H:i:s', $str);
+}
+
+function getLastDayOfMonth($date) {
+    $time = getDateAsDateTime($date)->getTimesTamp();
+    return new DateTime(date('Y-m-t', $time));
+
+}
