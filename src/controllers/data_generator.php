@@ -1,7 +1,7 @@
 <?php
 
 Database::executeSQL('DELETE FROM working_hours');
-Database::executeSQL('DELETE FROM users WHERE id > 5');
+// Database::executeSQL('DELETE FROM users WHERE id > 5');
 
 echo isBefore(date('Y-m-1'), date('Y-m-2'));
 

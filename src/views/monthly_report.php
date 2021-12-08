@@ -1,3 +1,9 @@
 <?php 
 
-echo 'oi';
+print_r($report);
+echo "<hr>";
+$sumOfWorkedTime;
+echo "<hr>";
+$balance;
+
+?>
