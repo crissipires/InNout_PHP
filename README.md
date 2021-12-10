@@ -6,6 +6,8 @@
 
 A aplicação consiste em realizar o batimento de horários de entrada e saída de funcionários em uma empresa.
 
+---
+
 ## Tecnologias
 
 Abaixo as tecnologias utilizadas para construção da aplicação
@@ -19,11 +21,6 @@ Abaixo as tecnologias utilizadas para construção da aplicação
 
 - Php
 - Mysql
-
----
-<!-- 
-## Configurações necessárias
-
 
 ## :hammer_and_wrench: Ferramentas Utilizadas:
 - Foram utilizados:
