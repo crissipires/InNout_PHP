@@ -18,10 +18,6 @@ Abaixo as tecnologias utilizadas para construção da aplicação
 ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-
-- Php
-- Mysql
-
 ## :hammer_and_wrench: Ferramentas Utilizadas:
 - Foram utilizados:
 
